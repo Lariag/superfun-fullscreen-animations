@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    
+    <link rel="stylesheet" href="anims/common.css" type="text/css"/>
+    <link id="animsStyle" rel="stylesheet" type="text/css" />
+
+    <script src="anims/common.js"></script>
+	
+  <!--meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" /-->
+  <title></title>
+  
+</head>
+<body class="fade-in">
+  <!--div id="animasd" class="object"></div-->
+  
+  
+
+  
+  <script id="animsScript"></script>
+  <script>
+    const animsStyleURL = `${electronVars.animsStyleURL}`;  
+    document.getElementById('animsStyle').href = animsStyleURL;
+    
+    const animsScriptURL = `${electronVars.animsScriptURL}`;  
+    const script = document.createElement('script');
+    script.src = animsScriptURL;
+    document.getElementById('animsScript').appendChild(script);
+    document.getElementById('animsScript').src = animsScriptURL;
+
+    const animDuration = `${electronVars.animDuration}`;  
+
+    setTimeout(() => {
+      document.body.className = 'fade-out';
+    }, animDuration - 200);
+    </script>
+  </body>
+</html>

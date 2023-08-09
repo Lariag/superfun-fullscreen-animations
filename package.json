@@ -1,0 +1,14 @@
+{
+  "name": "superfun-fullscreen-animations",
+  "version": "1.0.0",
+  "description": "Runs in the background and shows full screen html/css/javascript animations when a keyboard shortcut is pressed.",
+  "main": "main.js",
+  "author": "Lara",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^25.4.0"
+  }
+}
