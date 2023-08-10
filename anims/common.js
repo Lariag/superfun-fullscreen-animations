@@ -105,3 +105,9 @@ function AddElementClassAfter(elm, clas, delay, prevClas = ''){
 
     AddElementClassAfterAccumulatedDelays[elm.id+ 'AddElementClassAfter'] = acc;
 }
+
+function deleteElementAfter(elm, delay){
+    setTimeout(() => {
+        elm.remove();
+    }, delay * 1000);
+}

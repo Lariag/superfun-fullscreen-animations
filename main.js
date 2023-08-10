@@ -38,19 +38,28 @@ lastTimeout = setTimeout(() => {
 
 app.on('ready', () => {
   globalShortcut.register('CommandOrControl+Num1', () => {
-    startAnim('1');
+    startAnim('1.matrix', 5);
+  });
+  globalShortcut.register('CommandOrControl+Num2', () => {
+    startAnim('2.sad', 3);
+  });
+  globalShortcut.register('CommandOrControl+Num3', () => {
+    startAnim('3.check', 3);
   });
   globalShortcut.register('CommandOrControl+Num5', () => {
-    startAnim('5', 3);
+    startAnim('5.confetti', 4);
+  });
+  globalShortcut.register('CommandOrControl+Num6', () => {
+    startAnim('6', 0.3);
   });
   globalShortcut.register('CommandOrControl+Num7', () => {
-    startAnim('7');
+    startAnim('7.dance', 3);
   });
   globalShortcut.register('CommandOrControl+Num8', () => {
-    startAnim('8', 3);
+    startAnim('8.smile', 3);
   });
   globalShortcut.register('CommandOrControl+Num9', () => {
-    startAnim('9');
+    startAnim('9.facepalm', 2);
   });
 });
 

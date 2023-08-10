@@ -1,0 +1,17 @@
+.scale-up-and-fade-out {
+	animation: scale-up-and-fade-out 1s ease-out both;
+}
+
+ @keyframes scale-up-and-fade-out {
+    0% {
+        scale: 0;
+    }
+    90% {
+      opacity: 1;
+      scale: 1;
+  }
+    100% {
+        opacity: 0;
+        scale: 6;
+    }
+}

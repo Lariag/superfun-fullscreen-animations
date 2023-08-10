@@ -1,0 +1,25 @@
+.fade-out-at-end {
+	animation: fade-out-at-end 1s ease-in both;
+}
+
+ @keyframes fade-out-at-end {
+    0%,
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+body {
+    color: limegreen;
+    font-family: 'Lucida Console', 'system-ui', 'Segoe UI';
+}
+
+.fullScreenBG {
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
