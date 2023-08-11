@@ -25,7 +25,9 @@ function runLine(posX, posY, interval){
     AddElementToBodyAtPos(elm, 0.3, posX, posY);
     AddElementClassAfter(elm, 'fade-out-at-end', 0);
     deleteElementAfter(elm, 1.1);
-    ReplaceElementTextAfter(elm, chars[GetRandomInt(0, chars.length)], 0.4);
+	
+	ReplaceElementTextAfter(elm, chars[GetRandomInt(0, chars.length)], (interval * 0.5) / 1000);
+	ReplaceElementTextAfter(elm, chars[GetRandomInt(0, chars.length)], (interval * 5) / 1000);
     
     setTimeout(() => {
         runLine(posX, posY + verticalCharSeparation, interval)

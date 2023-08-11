@@ -3,12 +3,23 @@
 }
 
  @keyframes fade-out-at-end {
-    0%,
-    30% {
+    0% {
+		opacity: 1;
+		color: rgb(204, 255, 204);
+	}
+    5% {
+		opacity: 1;
+		color: rgb(121, 194, 121);
+	}
+	30% {
+		color: limegreen;
+	}
+    50% {
         opacity: 1;
     }
     100% {
         opacity: 0;
+		color: darkgreen;
     }
 }
 
